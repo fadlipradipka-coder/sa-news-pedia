@@ -7,12 +7,10 @@
     <meta property="og:title" content="UNDERGROUND REPORT: Crimson Order Da Unveiled">
     <meta property="og:description" content="Inside the high-end fronts of San Andreas' most elusive syndicate. From restaurants to black markets. Authorized IC Personnel Only.">
     <meta property="og:type" content="article">
-    
     <meta property="og:image" content="https://fadlipradipka-coder.github.io/kdo-dark-net/strapped_logo.png"> 
-    
     <meta property="og:url" content="https://fadlipradipka-coder.github.io/ls-insider-news/"> 
-    
-    <meta name="theme-color" content="#b91c1c"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#b91c1c">
+    <meta name="twitter:card" content="summary_large_image">
 
     <title>Crimson Order Da | Underworld News Report</title>
     
@@ -29,7 +27,6 @@
             --text-main: #e5e5e5;
             --text-muted: #a3a3a3;
             --accent-red: #dc2626;
-            --accent-red-hover: #b91c1c;
             --font-sans: 'Inter', sans-serif;
             --font-serif: 'Playfair Display', serif;
         }
@@ -41,233 +38,85 @@
             color: var(--text-main);
             font-family: var(--font-sans);
             line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
         }
 
         .navbar {
             background-color: var(--bg-nav);
             border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            padding: 15px 0;
+            position: sticky; top: 0; z-index: 100; padding: 15px 0;
         }
 
         .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            max-width: 1200px; margin: 0 auto; padding: 0 20px;
+            display: flex; justify-content: space-between; align-items: center;
         }
 
         .nav-logo {
-            font-family: var(--font-sans);
-            font-weight: 900;
-            font-size: 22px;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-decoration: none;
+            font-family: var(--font-sans); font-weight: 900; font-size: 22px;
+            color: #fff; text-transform: uppercase; letter-spacing: 2px; text-decoration: none;
         }
 
         .nav-logo span { color: var(--accent-red); }
 
-        .nav-links { display: flex; gap: 20px; }
-        .nav-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.2s;
-        }
-        .nav-links a:hover { color: #fff; }
-
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
 
         .article-header { margin-bottom: 40px; text-align: center; }
-        
-        .category {
-            color: var(--accent-red);
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
+        .article-title { font-family: var(--font-serif); font-size: 48px; line-height: 1.1; margin-bottom: 20px; color: #fff; }
+
+        .content-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
+        @media (min-width: 900px) { .content-grid { grid-template-columns: 2fr 1fr; } }
+
+        .article-content p { font-size: 16px; margin-bottom: 24px; color: #d4d4d8; }
+
+        /* INFOBOX STYLING */
+        .infobox { background-color: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; position: sticky; top: 80px; }
+        .infobox-header { background-color: #171717; padding: 20px; text-align: center; border-bottom: 1px solid var(--border-color); }
+        .infobox-header h3 { font-family: var(--font-serif); font-size: 22px; color: #fff; }
+
+        /* FOTO INFOKBOX */
+        .infobox-image-container {
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .infobox-image-container img {
+            width: 100%;
+            height: auto;
             display: block;
         }
 
-        .article-title {
-            font-family: var(--font-serif);
-            font-size: 48px;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-
-        .article-meta {
-            color: var(--text-muted);
-            font-size: 13px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        @media (min-width: 900px) {
-            .content-grid { grid-template-columns: 2fr 1fr; }
-        }
-
-        .article-content p {
-            font-size: 16px;
-            margin-bottom: 24px;
-            color: #d4d4d8;
-        }
-
-        .article-content p.lead {
-            font-size: 20px;
-            font-family: var(--font-serif);
-            font-style: italic;
-            color: #fff;
-            margin-bottom: 30px;
-            border-left: 3px solid var(--accent-red);
-            padding-left: 20px;
-        }
-
-        .article-content h2 {
-            font-family: var(--font-sans);
-            font-size: 24px;
-            color: #fff;
-            margin: 40px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .infobox {
-            background-color: var(--bg-panel);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            overflow: hidden;
-            position: sticky;
-            top: 80px;
-        }
-
-        .infobox-header {
-            background-color: #171717;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .infobox-header h3 {
-            font-family: var(--font-serif);
-            font-size: 22px;
-            color: #fff;
-        }
-
-        .infobox-image {
-            width: 100%;
-            height: 200px;
-            background-color: #1a1a1a;
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.1) 0%, transparent 70%),
-                linear-gradient(0deg, #111 0%, #171717 100%);
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
-            font-size: 12px;
-            font-family: var(--font-sans);
-        }
-        
-        .infobox-image::after {
-            content: 'GANG_PHOTO_001_A_PNG';
-        }
-
         .infobox-data { padding: 0; list-style: none; }
-
-        .infobox-row {
-            display: grid;
-            grid-template-columns: 35% 65%;
-            padding: 12px 20px;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 13px;
-        }
-
+        .infobox-row { display: grid; grid-template-columns: 35% 65%; padding: 12px 20px; border-bottom: 1px solid var(--border-color); font-size: 13px; }
         .infobox-row:last-child { border-bottom: none; }
-        .infobox-row:nth-child(even) { background-color: rgba(255, 255, 255, 0.01); }
-
         .row-label { font-weight: 700; color: #fff; }
         .row-value { color: var(--text-muted); }
-        .row-value span.highlight { color: var(--accent-red); font-weight: 600; }
 
-        footer {
-            margin-top: 60px;
-            padding: 30px 20px;
-            text-align: center;
-            background-color: var(--bg-nav);
-            border-top: 1px solid var(--border-color);
-            color: var(--text-muted);
-            font-size: 12px;
-        }
+        footer { margin-top: 60px; padding: 30px 20px; text-align: center; background-color: var(--bg-nav); border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 12px; }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Los Santos <span>Insider</span></a>
-            <div class="nav-links">
-                <a href="#">News</a>
-                <a href="#">Investigations</a>
-                <a href="#">Factions</a>
-                <a href="#">Archives</a>
-            </div>
+            <a href="#" class="nav-logo">San Andreas <span>Insider</span></a>
         </div>
     </nav>
 
     <main class="container">
         <header class="article-header">
-            <span class="category">Investigative Desk // Underground Report</span>
             <h1 class="article-title">Crimson Order Da: Inside San Andreas' Elusive Syndicate</h1>
-            <div class="article-meta">
-                <span>By <strong>Investigative Desk</strong></span>
-                <span>•</span>
-                <span>Published: May 22, 2026</span>
-                <span>•</span>
-                <span>5 Min Read</span>
-            </div>
         </header>
 
         <div class="content-grid">
             <article class="article-content">
-                <p class="lead">Behind a sophisticated facade of successful legitimate businesses, the Crimson Order Da has quietly constructed a formidable crime syndicate in San Andreas, tracing its deep roots back to the UK.</p>
-                
-                <p><strong>Crimson Order Da</strong> is a large-scale organized crime syndicate with international reach, predominantly active in San Andreas. Originating in Birmingham, England, in 1998, the organization has evolved from its British roots into a global enterprise. To the general public in San Andreas, the Order appears as a successful business conglomerate. Their impressive portfolio reportedly includes high-end restaurants, bustling bars, popular local markets, luxury hotels, sprawling casinos, and high-end vehicle dealerships across the state.</p>
-
-                <p>However, law enforcement sources and underworld chatter indicate these legal fronts serve a much darker purpose. These establishments provide a sophisticated, untraceable cover for a vast network of criminal enterprises, moving capital and goods seamlessly between their international territories and San Andreas operations.</p>
-
-                <h2>Underworld Operations</h2>
-                <p>Law enforcement reports have linked Crimson Order Da to a terrifying array of illegal activities. These range from traditional mob rackets—such as extortion, illegal gambling, and aggressive loansharking—to sophisticated white-collar crimes like corporate fraud and massive money laundering operations fueled by their casino and dealership cash flows.</p>
-                
-                <p>But the syndicate's reach extends into more violent territory. They are heavily embedded in both drug and arms trafficking. To protect their interests and silence competition, the Crimson Order Da is not opposed to utilizing extreme measures, including intimidation and contract murder, executed with the cold discipline characteristic of their British origins.</p>
-
-                <h2>Synergy with KDO</h2>
-                <p>Operating as a critical, albeit highly specialized, arm of the syndicate in San Andreas is the <span class="highlight">Kilo District Operations (KDO)</span> network. This division, fueled by the ruthless "The Strapped Lads Crew," acts as the logistical heart of their weaponry and narcotic pipelines, ensuring seamless distribution across the region under the guise of legitimate logistics.</p>
+                <p><strong>Crimson Order Da</strong> is an international organized crime syndicate. Originating in Birmingham, England, in 1998, the organization has evolved into a global enterprise with deep roots in San Andreas.</p>
+                <p>To the general public in San Andreas, the Order appears as a successful business conglomerate. Their impressive portfolio reportedly includes high-end restaurants, bustling bars, popular local markets, luxury hotels, sprawling casinos, and high-end vehicle dealerships across the state.</p>
+                <p>However, law enforcement sources indicate these legal fronts serve as a sophisticated, untraceable cover for a vast network of criminal enterprises, moving capital and goods seamlessly between their international territories and San Andreas operations.</p>
             </article>
 
             <aside>
@@ -275,35 +124,31 @@
                     <div class="infobox-header">
                         <h3>Crimson Order Da</h3>
                     </div>
-                    <div class="infobox-image"></div>
+                    
+                    <div class="infobox-image-container">
+                        <img src="mobster.jpg" alt="Crimson Order Da">
+                    </div>
+                    
                     <ul class="infobox-data">
                         <li class="infobox-row">
                             <div class="row-label">Founded</div>
                             <div class="row-value">1998</div>
                         </li>
                         <li class="infobox-row">
-                            <div class="row-label">Founding Location</div>
-                            <div class="row-value">Birmingham, England, United Kingdom.</div>
+                            <div class="row-label">Location</div>
+                            <div class="row-value">Birmingham, England, UK.</div>
                         </li>
                         <li class="infobox-row">
                             <div class="row-label">Territory</div>
-                            <div class="row-value">San Andreas and other international regions.</div>
+                            <div class="row-value">San Andreas & International.</div>
                         </li>
                         <li class="infobox-row">
                             <div class="row-label">Ethnicity</div>
                             <div class="row-value">British, Caucasian.</div>
                         </li>
                         <li class="infobox-row">
-                            <div class="row-label">Activities</div>
-                            <div class="row-value">Extortion, fraud, gambling, loansharking, money laundering, murder, drug/arms trafficking.</div>
-                        </li>
-                        <li class="infobox-row">
-                            <div class="row-label">Legitimate Fronts</div>
-                            <div class="row-value">Restaurants, bars, markets, casinos, hotels, dealerships.</div>
-                        </li>
-                        <li class="infobox-row">
-                            <div class="row-label">Key Division</div>
-                            <div class="row-value"><span class="highlight">Kilo District Operations (KDO)</span></div>
+                            <div class="row-label">Fronts</div>
+                            <div class="row-value">Restaurants, Bars, Casinos, Dealerships.</div>
                         </li>
                     </ul>
                 </div>
@@ -312,7 +157,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Los Santos Insider. Investigation Desk. Unauthorized duplication is prohibited.</p>
+        <p>&copy; 2026 San Andreas Insider. Investigation Desk. Unauthorized duplication is prohibited.</p>
     </footer>
 
 </body>
